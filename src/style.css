@@ -15,8 +15,13 @@ body{
     text-align: center;
 }
 
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .removeButton{
-    width: 100%;
+    width: 50%;
     background-color: rgb(219, 72, 4);
     color: white;
     padding: 14px 20px;
@@ -24,6 +29,19 @@ body{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    border: 2px solid #fff; 
+}
+
+.editButton{
+    width: 50%;
+    background-color: rgb(219, 72, 4);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #fff;
 }
 
 input[type=text]{
@@ -63,6 +81,20 @@ input[type=submit], #addPicButton {
 }
 
 #container h1, #newPicFormContainer h1 {
+    text-align: center
+}
+
+#updatePicFormContainer{
+    height: 0px;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: auto;
+    overflow: hidden;
+    transition: linear 0.5s;
+}
+
+#container h1, #updatePicFormContainer h1 {
     text-align: center
 }
 
